@@ -28,10 +28,10 @@ data class TransactionOutput(
 
     override fun toString(): String {
         return "{" +
-                "\n\trecipient: \"$recipient\", \n" +
-                "\tamount: \"$amount\", \n" +
-                "\ttransactionHash: \"$transactionHash\", \n" +
-                "\thash: \"$hash\"\n" +
+                "\n\t\"recipient\": \"$recipient\", \n" +
+                "\t\"amount\": \"$amount\", \n" +
+                "\t\"transactionHash\": \"$transactionHash\", \n" +
+                "\t\"hash\": \"$hash\"\n" +
                 "}"
     }
 }

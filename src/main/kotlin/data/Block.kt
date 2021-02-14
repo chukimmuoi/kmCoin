@@ -39,11 +39,11 @@ data class Block(
 
     override fun toString(): String {
         return "{" +
-                "\n\tpreviousHash: \"$previousHash\", \n" +
-                "\ttransactions: \"$transactions\", \n" +
-                "\ttimestamp: \"$timestamp\", \n" +
-                "\tnonce: \"$nonce\", \n" +
-                "\thash: \"$hash\"\n" +
+                "\n\t\"previousHash\": \"$previousHash\", \n" +
+                "\t\"transactions\": \"$transactions\", \n" +
+                "\t\"timestamp\": \"$timestamp\", \n" +
+                "\t\"nonce\": \"$nonce\", \n" +
+                "\t\"hash\": \"$hash\"\n" +
                 "}"
     }
 }

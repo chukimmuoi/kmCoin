@@ -53,12 +53,12 @@ data class Transaction(
 
     override fun toString(): String {
         return "{" +
-                "\n\tsender: \"$sender\", \n" +
-                "\trecipient: \"$recipient\", \n" +
-                "\tamount: \"$amount\", \n" +
-                "\thash: \"$hash\", \n" +
-                "\tinputs: \"$inputs\"\n" +
-                "\toutputs: \"$outputs\"\n" +
+                "\n\t\"sender\": \"$sender\", \n" +
+                "\t\"recipient\": \"$recipient\", \n" +
+                "\t\"amount\": \"$amount\", \n" +
+                "\t\"hash\": \"$hash\", \n" +
+                "\t\"inputs\": \"$inputs\"\n" +
+                "\t\"outputs\": \"$outputs\"\n" +
                 "}"
     }
 }

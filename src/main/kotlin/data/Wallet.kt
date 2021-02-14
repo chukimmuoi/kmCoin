@@ -26,7 +26,9 @@ data class Wallet(
     }
 
     private fun getMyTransactions(): Collection<TransactionOutput> {
-        return blockChain.UTXO.filterValues { it.isMine(publicKey) }.values
+        return blockChain.UTXO.filterValues {
+            it.isMine(publicKey)
+        }.values
     }
 
     fun sendFundsTo(recipient: PublicKey,
@@ -74,9 +76,9 @@ data class Wallet(
 
     override fun toString(): String {
         return "{" +
-                "\n\tpublicKey: \"$publicKey\", \n" +
-                "\tprivateKey: \"$privateKey\", \n" +
-                "\tblockChain: \"$blockChain\", \n" +
+                "\n\t\"publicKey\": \"$publicKey\", \n" +
+                "\t\"privateKey\": \"$privateKey\", \n" +
+                "\t\"blockChain\": \"$blockChain\", \n" +
                 "}"
     }
 }
