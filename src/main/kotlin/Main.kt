@@ -1,5 +1,7 @@
 import data.*
 
+// https://medium.com/@vasilyf/lets-implement-a-cryptocurrency-in-kotlin-part-1-blockchain-8704069f8580
+// https://medium.com/@vasilyf/lets-implement-a-cryptocurrency-in-kotlin-part-2-wallets-and-transactions-7aa55239c0d9
 fun main(args: Array<String>) {
 
     val blockChain = BlockChain()
